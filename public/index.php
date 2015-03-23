@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JD | Justin Dietert</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="/css/foundation.min.css" />
+
+    <!-- Custom Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600' rel='stylesheet' type='text/css' />
+
+    <!-- FontAwesome icons-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css" />
+
+    <!-- Modernizr.js -->
+    <script src="/js/vendor/modernizr.js"></script>
+    </head>
+
+    <body>
+
+
+        <script src="/js/vendor/jquery.js"></script>
+        <script src="/js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
 </html>
