@@ -110,7 +110,7 @@ hr {
 
 .svg .jd-logo {
     margin-top: 0.8625rem;
-    margin-left: 0.9375rem;
+    /*margin-left: 0.9375rem;*/
     width: 2.5rem;
     height: 2.5rem;
     background: url('/img/jd-logo.svg') no-repeat top left;
@@ -144,7 +144,7 @@ hr {
 }
 
 .contain-to-grid {
-    background: #333399;
+    background: #e7e7eb;
 }
 
 .lighter-weight {
@@ -160,10 +160,10 @@ hr {
 }
 
 .top-bar {
-    background: #ffffff;
+    /*background: #e7e7eb;*/
+    background: rgba(231, 231, 235, 0.5);
     height: 4.375rem;
-    /*line-height: 3.75rem;*/
-    border-bottom: 1px solid #c8c8cc;
+    /*border-bottom: 1px solid #c8c8cc;*/
 }
 
 .top-bar .name a {
@@ -187,36 +187,36 @@ hr {
 }
 
 .top-bar-section ul li {
-    background: #ffffff; 
+    background: #e7e7eb; 
 }
 
 .top-bar-section li.hover > a:not(.button) {
     background-color: #221c35;
-    background: #ffffff;
+    background: #e7e7eb;
     color: #e7e7eb; 
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-    background: #ffffff; 
+    background: #e7e7eb; 
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #221c35;
-    background: #ffffff; 
+    background: #e7e7eb; 
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button) {
     color: #e7e7eb;
-    background: #ffffff; 
+    background: #e7e7eb; 
 }
 
 .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: #ffffff;
+    background: #e7e7eb;
     color: #e7e7eb; 
 }
 
 .top-bar.expanded .title-area {
-    background: #ffffff;
+    background: #e7e7eb;
 }
 
 .nav ul li {

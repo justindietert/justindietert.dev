@@ -1,4 +1,4 @@
-    <div class="fixed">
+    <div class="fixed contain-to-grid">
         <nav class="top-bar" data-topbar>
             <ul class="title-area">
                 <li class="name">
