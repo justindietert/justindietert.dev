@@ -1,225 +1,241 @@
 /*Custom Styles to Override Foundation Styles*/
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    background-color: #f0f0f4;   
+@media only screen {
+
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        background-color: #f0f0f4;   
+    }
+
+    h1, h2, h3, h4, h5, h6, p, a {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    h1 {
+        font-weight: 300;
+    }
+
+    h2 {
+        font-weight: 600;
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+    h3 {
+        font-weight: 300;
+        color: #919195;
+    }
+
+    h5 {
+        font-weight: 300;
+        color: #606064;
+    }
+
+    h6 {
+        font-weight: 400;
+        color: #96969a;
+    }
+
+    hr {
+        border: solid #d6d6da;
+        border-width: 1px 0 0;
+        clear: both;
+        margin: 1.25rem 0 1.1875rem;
+        height: 0; 
+    }
+
+    .indigo {
+        background-color: #221c35;
+    }
+
+    .maroon {
+        background-color: #85144b;
+    }
+
+    .red {
+        background-color: #e83944;
+    }
+
+    .blue {
+        background-color: #333399;
+    }
+
+    .purple {
+        background-color: #673ab7;
+    }
+
+    .fuchsia {
+        background-color: #b10dc9;
+    }
+
+    .white {
+        background-color: #fff;
+    }
+
+    .indigo-text {
+        color: #221c35;
+    }
+
+    .maroon-text {
+        color: #85144b;
+    }
+
+    .red-text {
+        color: #e83944;
+    }
+
+    .blue-text {
+        color: #333399;
+    }
+
+    .purple-text {
+        color: #673ab7;
+    }
+
+    .fuchsia-text {
+        color: #b10dc9;
+    }
+
+    .white-text {
+        color: #fff;
+    }
+
+    .rel {
+        position: relative;
+    }
+
+    /* SVG Logo styles
+    -------------------------------------------------- */
+
+    .svg .jd-logo {
+        margin-top: 0.8625rem;
+        margin-left: 0.9375rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url('/img/jd-logo.svg') no-repeat top left;
+        background-size: contain;
+        transition: margin-left 300ms ease-out;
+    }
+
+    .no-svg .jd-logo {
+        background: url('/img/jd-logo.png');
+    }
+
+    .footer-text {
+        color: #96969a;
+        margin-top: 0.25rem;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    .top-row {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .bottom-row {
+        margin-bottom: 0.25rem;
+    }
+
+    .lighter-weight {
+        font-weight: 300;
+        text-transform: none;
+        letter-spacing: 0.125rem;
+    }
+
+    .medium-weight {
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: 0.0875rem;
+    }
+
+    .top-bar {
+        /*background: #e7e7eb;*/
+        background: transparent;
+        height: 4.375rem;
+    }
+
+    .contain-to-grid {
+        /*background: #e7e7eb;*/
+        background: rgba(231, 231, 235, 0.85);
+    }
+
+    .top-bar .name a {
+        /*width: 75%;*/
+        display: block;
+        /*padding: 0 0.9375rem;*/
+    }
+
+    .top-bar-section ul li > a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        color: #e7e7eb;
+        letter-spacing: 0.05rem;
+    }
+
+    .top-bar .toggle-topbar.menu-icon a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.125rem;
+        color: #96969a;
+    }
+
+    .top-bar-section ul li {
+        background: #e7e7eb; 
+    }
+
+    .top-bar-section li.hover > a:not(.button) {
+        background-color: #221c35;
+        background: #e7e7eb;
+        color: #e7e7eb; 
+    }
+
+    .top-bar-section li:not(.has-form) a:not(.button) {
+        background: #e7e7eb; 
+    }
+
+    .top-bar-section li:not(.has-form) a:not(.button):hover {
+        background-color: #221c35;
+        background: #e7e7eb; 
+    }
+
+    .top-bar-section li.active:not(.has-form) a:not(.button) {
+        color: #e7e7eb;
+        background: #e7e7eb; 
+    }
+
+    .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+        background: #e7e7eb;
+        color: #e7e7eb; 
+    }
+
+    .top-bar.expanded .title-area {
+        background: #e7e7eb;
+    }
+
+    .nav ul li {
+        display: inline-block;
+    }
+
+/* End @media only screen */
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
-    font-family: 'Source Sans Pro', sans-serif;
+@media only screen and (min-width: 64.063em) {
+    
+    .svg .jd-logo {
+        margin-left: 0;
+    }
+
+/* End @media only screen and (min-width: 64.063em) */
 }
 
-h1 {
-    font-weight: 300;
-}
-
-h2 {
-    font-weight: 600;
-}
-
-p {
-    font-weight: 400;
-}
-
-h3 {
-    font-weight: 300;
-    color: #919195;
-}
-
-h5 {
-    font-weight: 300;
-    color: #606064;
-}
-
-h6 {
-    font-weight: 400;
-    color: #96969a;
-}
-
-hr {
-    border: solid #d6d6da;
-    border-width: 1px 0 0;
-    clear: both;
-    margin: 1.25rem 0 1.1875rem;
-    height: 0; 
-}
-
-.indigo {
-    background-color: #221c35;
-}
-
-.maroon {
-    background-color: #85144b;
-}
-
-.red {
-    background-color: #e83944;
-}
-
-.blue {
-    background-color: #333399;
-}
-
-.purple {
-    background-color: #673ab7;
-}
-
-.fuchsia {
-    background-color: #b10dc9;
-}
-
-.white {
-    background-color: #fff;
-}
-
-.indigo-text {
-    color: #221c35;
-}
-
-.maroon-text {
-    color: #85144b;
-}
-
-.red-text {
-    color: #e83944;
-}
-
-.blue-text {
-    color: #333399;
-}
-
-.purple-text {
-    color: #673ab7;
-}
-
-.fuchsia-text {
-    color: #b10dc9;
-}
-
-.white-text {
-    color: #fff;
-}
-
-.rel {
-    position: relative;
-}
-
-/* SVG Logo styles
--------------------------------------------------- */
-
-.svg .jd-logo {
-    margin-top: 0.8625rem;
-    /*margin-left: 0.9375rem;*/
-    width: 2.5rem;
-    height: 2.5rem;
-    background: url('/img/jd-logo.svg') no-repeat top left;
-    background-size: contain;
-}
-
-.no-svg .jd-logo {
-    background: url('/img/jd-logo.png');
-}
-
-.footer-text {
-    color: #96969a;
-    margin-top: 0.25rem;
-}
-
-.align-right {
-    text-align: right;
-}
-
-.float-right {
-    float: right;
-}
-
-.top-row {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.bottom-row {
-    margin-bottom: 0.25rem;
-}
-
-.contain-to-grid {
-    background: #e7e7eb;
-}
-
-.lighter-weight {
-    font-weight: 300;
-    text-transform: none;
-    letter-spacing: 0.125rem;
-}
-
-.medium-weight {
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 0.0875rem;
-}
-
-.top-bar {
-    /*background: #e7e7eb;*/
-    background: rgba(231, 231, 235, 0.5);
-    height: 4.375rem;
-    /*border-bottom: 1px solid #c8c8cc;*/
-}
-
-.top-bar .name a {
-    /*width: 75%;*/
-    display: block;
-    /*padding: 0 0.9375rem;*/
-}
-
-.top-bar-section ul li > a {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    color: #e7e7eb;
-    letter-spacing: 0.05rem;
-}
-
-.top-bar .toggle-topbar.menu-icon a {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.125rem;
-    color: #96969a;
-}
-
-.top-bar-section ul li {
-    background: #e7e7eb; 
-}
-
-.top-bar-section li.hover > a:not(.button) {
-    background-color: #221c35;
-    background: #e7e7eb;
-    color: #e7e7eb; 
-}
-
-.top-bar-section li:not(.has-form) a:not(.button) {
-    background: #e7e7eb; 
-}
-
-.top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #221c35;
-    background: #e7e7eb; 
-}
-
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-    color: #e7e7eb;
-    background: #e7e7eb; 
-}
-
-.top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: #e7e7eb;
-    color: #e7e7eb; 
-}
-
-.top-bar.expanded .title-area {
-    background: #e7e7eb;
-}
-
-.nav ul li {
-    display: inline-block;
-}
 
