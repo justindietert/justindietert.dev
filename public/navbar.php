@@ -1,29 +1,30 @@
-    <div class="contain-to-grid fixed">
+    <div class="fixed">
         <nav class="top-bar" data-topbar>
             <ul class="title-area">
                 <li class="name">
-                    <h1 id="site-name"><a href="#">Justin Dietert</a></h1>
+                    <a href="#" class="jd-logo"></a>
                 </li>
                 <li class="toggle-topbar menu-icon">
-                    <a href="#">Menu</a>
+                    <a href="#"><i class="fa fa-bars"></i></a>
                 </li>
             </ul>
       
-            <section class="top-bar-section">
+            <!-- <section class="top-bar-section"> -->
+            <div class="nav">
                 <!-- Right Nav Section -->
                 <ul class="right">
                     <li class="active">
-                        <a href="#">Featured posts</a>
+                        <a href="#">Work</a>
                     </li>
                     <li class="">
-                        <a href="#">View all posts</a>
+                        <a href="#">About</a>
                     </li>
                     <li class="">
-                        <a href="#">Contact me</a>
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
-            </section>
+            </div>
+            <!-- </section> -->
         </nav>
     </div>
 
-    
