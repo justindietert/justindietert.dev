@@ -1,4 +1,4 @@
-<!-- jQuery -->
+    <!-- jQuery -->
     <script src="/js/vendor/jquery.js"></script>
     <!-- Modernizr.js -->
     <script src="/js/vendor/modernizr.js"></script>

@@ -1,4 +1,4 @@
 <?php
-require 'page-head.php';
-require 'navbar.php';
-require 'page-base.php';
+require_once 'page-head.php';
+require_once 'navbar.php';
+require_once 'page-base.php';
