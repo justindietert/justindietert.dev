@@ -9,7 +9,7 @@
 <!-- Foundation CSS -->
 <link rel="stylesheet" href="/css/foundation.min.css" />
 <!-- Custom Google Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic,600,900' rel='stylesheet' type='text/css' />
 <!-- FontAwesome icons-->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 <!-- Custom CSS -->

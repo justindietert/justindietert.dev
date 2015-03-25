@@ -1,5 +1,7 @@
-/*Custom Styles to Override Foundation Styles*/
+/* Minified SlabText CSS — included here to minimize HTTP requests */
+.slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}.slabtextinactive .slabtext{display:inline;white-space:normal;font-size:1em !important;letter-spacing:inherit !important;word-spacing:inherit !important;*letter-spacing:0 !important;*word-spacing:0 !important;}.slabtextdone .slabtext{display:block;line-height:0.9;}
 
+/* Custom Styles to Override Foundation Styles */
 @media only screen {
 
     body {
@@ -14,6 +16,26 @@
 
     h1 {
         font-weight: 300;
+    }
+
+    .headline {
+        padding: 0;
+        padding-top: 0.5rem;
+    }
+
+    #headline {
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+        font-size: 4.6875rem;
+        color: #333399;
+    }
+
+    .menu {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-right: 1.625rem;
     }
 
     h2 {
@@ -103,13 +125,8 @@
         color: #fff;
     }
 
-    .rel {
-        position: relative;
-    }
-
     /* SVG Logo styles
     -------------------------------------------------- */
-
     .svg .jd-logo {
         margin-top: 0.8625rem;
         margin-left: 0.9375rem;
@@ -117,12 +134,13 @@
         height: 2.5rem;
         background: url('/img/jd-logo.svg') no-repeat top left;
         background-size: contain;
-        transition: margin-left 300ms ease-out;
+        /*transition: margin-left 300ms ease-out;*/
     }
 
     .no-svg .jd-logo {
         background: url('/img/jd-logo.png');
     }
+    /* -------------------------------------------------- */
 
     .footer-text {
         color: #96969a;
@@ -159,71 +177,28 @@
     }
 
     .top-bar {
-        /*background: #e7e7eb;*/
-        background: transparent;
+        /*background: transparent;*/
+        background: rgba(255, 255, 255, 0.92);
         height: 4.375rem;
     }
 
     .contain-to-grid {
-        /*background: #e7e7eb;*/
-        background: rgba(231, 231, 235, 0.85);
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .top-bar .name a {
-        /*width: 75%;*/
         display: block;
         /*padding: 0 0.9375rem;*/
     }
 
-    .top-bar-section ul li > a {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 300;
-        color: #e7e7eb;
-        letter-spacing: 0.05rem;
+    .title-area {
+        float: left;
     }
 
-    .top-bar .toggle-topbar.menu-icon a {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 300;
-        letter-spacing: 0.125rem;
-        color: #96969a;
-    }
-
-    .top-bar-section ul li {
-        background: #e7e7eb; 
-    }
-
-    .top-bar-section li.hover > a:not(.button) {
-        background-color: #221c35;
-        background: #e7e7eb;
-        color: #e7e7eb; 
-    }
-
-    .top-bar-section li:not(.has-form) a:not(.button) {
-        background: #e7e7eb; 
-    }
-
-    .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #221c35;
-        background: #e7e7eb; 
-    }
-
-    .top-bar-section li.active:not(.has-form) a:not(.button) {
-        color: #e7e7eb;
-        background: #e7e7eb; 
-    }
-
-    .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #e7e7eb;
-        color: #e7e7eb; 
-    }
-
-    .top-bar.expanded .title-area {
-        background: #e7e7eb;
-    }
-
-    .nav ul li {
-        display: inline-block;
+    .reveal-modal {
+        background-color: rgba(51, 51, 153, 0.9);
+        border: none;
+        box-shadow: none;
     }
 
 /* End @media only screen */
@@ -231,9 +206,13 @@
 
 @media only screen and (min-width: 64.063em) {
     
-    .svg .jd-logo {
+/*    .svg .jd-logo {
         margin-left: 0;
-    }
+    }*/
+
+/*    #headline {
+        font-size: 100%;
+    }*/
 
 /* End @media only screen and (min-width: 64.063em) */
 }
