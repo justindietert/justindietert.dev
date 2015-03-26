@@ -177,7 +177,7 @@
     }
 
     .top-bar {
-        /*background: transparent;*/
+        background: transparent;
         background: rgba(255, 255, 255, 0.92);
         height: 4.375rem;
     }
@@ -188,7 +188,6 @@
 
     .top-bar .name a {
         display: block;
-        /*padding: 0 0.9375rem;*/
     }
 
     .title-area {

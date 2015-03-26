@@ -7,7 +7,6 @@
             </ul>
       
             <div class="nav">
-                <!-- Right Nav Section -->
                 <ul class="float-right">
                     <li class="menu">
                         <a href="#" data-reveal-id="nav-modal"><i class="fa fa-bars"></i></a>
