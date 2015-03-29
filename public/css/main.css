@@ -1,0 +1,565 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Dead Simple Grid (c) 2012 Vladimir Agafonkin
+   ========================================================================== */
+
+    .col {
+        padding: 0 1.5em;
+    }
+    .row .row {
+        margin: 0 -1.5em;
+    }
+
+    .row:before, .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+    @media only screen {
+        .col {
+            float: left;
+            width: 100%;
+
+            -webkit-box-sizing: border-box;
+               -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+    }
+
+    /* Adjust columns according to screen space below
+       ============================================== */
+
+    .container { max-width: 90em; } /* 1440px at 16px base font size*/
+
+    /* you only need width to set up columns; all columns are 100%-width by default, so we start
+       from a one-column mobile layout and gradually improve it according to available screen space */
+
+    @media only screen and (min-width: 34em) {
+        .feature, .info { width: 50%; }
+    }
+
+    @media only screen and (min-width: 54em) {
+        .content { width: 66.66%; }
+        .sidebar { width: 33.33%; }
+        .info    { width: 100%;   }
+    }
+
+    @media only screen and (min-width: 76em) {
+        .content { width: 58.33%; } /* 7/12 */
+        .sidebar { width: 41.66%; } /* 5/12 */
+        .info    { width: 50%;    }
+    }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* From typeplate.css *****************************
+   ************************************************ */
+
+/**
+   Word Wrap
+  ************************************************* */
+
+.typl8-breakword {
+    word-wrap: break-word;
+}
+
+.typl8-normal-wrap {
+    word-wrap: normal;
+}
+
+.typl8-inherit-wrap {
+    word-wrap: auto;
+}
+
+/**
+   OpenType
+  ************************************************* */
+
+.typl8-font-feature--smcp {
+    -webkit-font-feature-settings: "smcp";
+    -moz-font-feature-settings: "smcp";
+    -ms-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+}
+
+.typl8-font-feature--onum {
+    -webkit-font-feature-settings: 'onum';
+    -moz-font-feature-settings: 'onum';
+    -ms-font-feature-settings: 'onum';
+    font-feature-settings: 'onum';
+}
+
+/**
+   Base Type
+  ************************************************* */
+
+html {
+    font: normal 112.5%/1.65 sans-serif; /* base font size 18px with 1.65 line-height */
+}
+
+body {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    color: #444444;
+}
+
+
+/**
+   Fine Print
+  ************************************************* */
+
+small {
+    font-size: 65%;
+}
+
+
+/**
+   Headings
+  ************************************************* */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+    margin-top: 0;
+    text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
+    color: #222222;
+}
+
+
+/**
+* Extend included classes on any element of your
+* choosing for adjusting type based on the scale
+* provided.
+
+* For example:
+
+<h6 class="typl8-giga">Awesome Headline</h6>
+<p class="typl8-tera">a story about a dude</p>
+
+* Our Type Scale is as follows with px fallbacks
+* for IE 6-8 as they do not understand REM units.
+*
+* 18, 21, 24, 36, 48, 60, 72, 90, 117
+*
+*
+* Explanation:
+* margin-bottom = ( base font-size * base line-height ) / current font-size
+*
+* Makes sure that there's always one unit of measure's worth of space between shit
+* for headings. This is better than spacing using line-height because of the wrapping issue where we have
+* wrapping onto 2 lines with a high line-height.
+*/
+
+.typl8-tera {
+    font-size: 117px;
+    font-size: 6.5rem; /* 117 / 18 = 6.5 */
+    margin-bottom: 4.56923px;
+    margin-bottom: 0.25385rem;
+}
+
+.typl8-giga {
+    font-size: 90px;
+    font-size: 5rem; /* 90 / 18 = 5 */
+    margin-bottom: 5.94px;
+    margin-bottom: 0.33rem;
+}
+
+.typl8-mega {
+    font-size: 72px;
+    font-size: 4rem; /* 72 / 18 = 4 */
+    margin-bottom: 7.425px;
+    margin-bottom: 0.4125rem;
+}
+
+h1,
+.typl8-alpha {
+    font-size: 60px;
+    font-size: 3.33333rem; /* 60 / 18 = 3.3333 */
+    margin-bottom: 8.91px;
+    margin-bottom: 0.495rem;
+}
+
+h2,
+.typl8-beta {
+    font-size: 48px;
+    font-size: 2.6667rem; /* 48 / 18 = 2.6667 */
+    margin-bottom: 11.1375px;
+    margin-bottom: 0.61875rem;
+}
+
+h3,
+.typl8-gamma {
+    font-size: 36px;
+    font-size: 2rem; /* 36 / 18 = 2 */
+    margin-bottom: 14.85px;
+    margin-bottom: 0.825rem;
+}
+
+h4,
+.typl8-delta {
+    font-size: 24px;
+    font-size: 1.3333333333333333rem; /* 24 / 18 = 1.3333 */
+    margin-bottom: 22.275px;
+    margin-bottom: 1.2375rem;
+}
+
+h5,
+.typl8-epsilon {
+    font-size: 21px;
+    font-size: 1.16667rem; /* 21 / 18 = 1.1667 */
+    margin-bottom: 25.45714px;
+    margin-bottom: 1.41429rem;
+}
+
+h6,
+.typl8-zeta {
+    font-size: 18px;
+    font-size: 1rem; /* 18 = 18 × 1 */
+    margin-bottom: 29.7px;
+    margin-bottom: 1.65rem;
+}
+
+
+/**
+   Paragraphs and Indentation
+  ************************************************* */
+
+p {
+    margin: auto auto 1.5em; /* bottom margin for paragraphs */
+}
+
+p + p {
+    text-indent: 1.5em; /* indent subsequent paragraphs */
+    margin-top: -1.5em; /* no top margin on subsequent paragraphs */
+}
+
+
+/**
+   Hyphens
+  ************************************************* */
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+    /* Accepted values: [ none | manual | auto ] */ /* http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation */
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+
+/**
+   Code Blocks
+  ************************************************* */
+
+pre code {
+    word-wrap: normal;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+}
+
+pre {
+    white-space: pre;
+}
+
+code {
+    white-space: pre;
+    font-family: monospace;
+}
+/* End typeplate **********************************
+/* ************************************************ */
+
+
+body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #06f;
+}
+
+iframe {
+    border: 0;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 90em;
+    padding: 1em 0;
+}
+.top-row {
+    padding-top: 1rem;
+}
+
+.footer {
+    padding-top: 1.5em;
+}
+.desc {
+    color: #888;
+}
+.intro {
+    border-bottom: 1px dotted #aaa;
+    padding-bottom: 1.5em;
+}
+.social {
+    border-top: 1px dotted #aaa;
+    padding-top: 1.5em;
+}
+.last-item {
+    border-top: 1px dotted #aaa;
+    padding-top: 1em;
+}
+
+/* minor responsive adjustments */
+
+.footer {
+    border-top: 1px dotted #aaa;
+}
+.content {
+    border-bottom: 1px dotted #aaa;
+    margin-bottom: 1.5em;
+}
+
+/* ==========================================================================
+   Media Queries for Styling (See Dead Simple above for column breakpoints)
+   ========================================================================== */
+
+@media only screen and (min-width: 34em) {
+    /*p, ul {
+        font-size: 0.875em;
+    }*/
+    .feature:first-child,
+    .info:first-child {
+        border-right: 1px dotted #aaa;
+    }
+    .container {
+        padding: 1em;
+    }
+    /*h1 {
+        font-size: 2.6em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }*/
+}
+
+@media only screen and (min-width: 54em) {
+    .content {
+        border: none;
+        border-right: 1px dotted #aaa;
+        margin-bottom: 0;
+    }
+    .info:first-child {
+        border: none;
+    }
+    /*h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }*/
+}
+
+@media only screen and (min-width: 76em) {
+    .info:first-child {
+        border-right: 1px dotted #aaa;
+    }
+    /*h1 {
+        font-size: 3.2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }*/
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
