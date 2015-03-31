@@ -1,27 +1,30 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>JD | Justin Dietert</title>
-    <meta name="description" content="">
+    <meta name="description" content="Graphic design and web development">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="css/normalize.min.css">
-    <!-- Custom Google Fonts -->
+    <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400italic,600,900' rel='stylesheet' type='text/css'>
-    <!-- FontAwesome icons-->
+    <!-- FontAwesome Icons-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Custom CSS -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- Modernizr JS and Respond JS -->
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!-- enable HTML5 elements in IE7+8 -->
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
 </head>
+
 <body>
+    <!-- alert user to upgrade browser if less than IE8 -->
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -33,50 +36,48 @@
         </div>
 
         <div class="row">
-            <div class="top-row">
-                <div class="col content">
-                    <h3>Graphic Design and Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dignissimos esse expedita sapiente voluptates distinctio maiores commodi debitis consequuntur repellendus. Adipisci consequuntur officia libero dolores aliquid ducimus est atque possimus neque fuga? Ipsum quam sunt, provident rerum nulla illum! Aut error recusandae dolores dicta, assumenda odit vero, eos harum itaque.</p>
+            <div class="col content">
+                <h3>Graphic Design and Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dignissimos esse expedita sapiente voluptates distinctio maiores commodi debitis consequuntur repellendus. Adipisci consequuntur officia libero dolores aliquid ducimus est atque possimus neque fuga? Ipsum quam sunt, provident rerum nulla illum! Aut error recusandae dolores dicta, assumenda odit vero, eos harum itaque.</p>
 
-                    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nobis alias veniam pariatur amet distinctio omnis, hic cum saepe perferendis aliquam reiciendis cumque quidem soluta architecto, a ea ipsa, odit quos totam sequi. Officiis, perferendis cupiditate praesentium rem amet, iusto ut veritatis porro impedit, eligendi dolor pariatur quaerat! Suscipit eos repudiandae corporis, earum doloribus laboriosam? Magnam numquam fugit quisquam adipisci officiis. Illum, deleniti, inventore! Laborum eveniet, earum consequuntur nulla. Debitis, facere labore! Delectus, ullam, voluptate.</p>
+                <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nobis alias veniam pariatur amet distinctio omnis, hic cum saepe perferendis aliquam reiciendis cumque quidem soluta architecto, a ea ipsa, odit quos totam sequi. Officiis, perferendis cupiditate praesentium rem amet, iusto ut veritatis porro impedit, eligendi dolor pariatur quaerat! Suscipit eos repudiandae corporis, earum doloribus laboriosam? Magnam numquam fugit quisquam adipisci officiis. Illum, deleniti, inventore! Laborum eveniet, earum consequuntur nulla. Debitis, facere labore! Delectus, ullam, voluptate.</p>
 
-                    <div class="row">
-                        <div class="col feature">
-                            <h4>Feature Block One</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        </div>
-
-                        <div class="col feature">
-                            <h4>Feature Block Two</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        </div>
+                <div class="row">
+                    <div class="col feature">
+                        <h4>Feature Block One</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     </div>
 
-                    <h3 class="last-item">And One Last Thing</h3>
-
-                    <p>Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="col feature">
+                        <h4>Feature Block Two</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
                 </div>
 
-                <div class="col sidebar">
+                <h3 class="last-item">And One Last Thing</h3>
 
-                    <h3>A Simple Sidebar</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                <p>Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
 
-                    <div class="row">
-                        <div class="col info">
-                            <h4>Info Block One</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                        </div>
+            <div class="col sidebar">
 
-                        <div class="col info">
-                            <h4>Info Block Two</h4>
+                <h3>A Simple Sidebar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
 
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                        </div>
+                <div class="row">
+                    <div class="col info">
+                        <h4>Info Block One</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
 
-                    <p class="social">Social media icons here.</p>
+                    <div class="col info">
+                        <h4>Info Block Two</h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
                 </div>
+
+                <p class="social">Social media icons here.</p>
             </div>
         </div>
     
@@ -84,9 +85,8 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+    <!-- custom JS -->
     <script src="js/main.js"></script>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
