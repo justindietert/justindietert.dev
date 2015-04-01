@@ -25,6 +25,7 @@ iframe {
     max-width: 90em; /* 1620px at 18px base font size (set in typelate.css) */
     padding: 1em 0;
 }
+    .lt-ie9 .container { max-width: 39em; }
 
 .footer {
     padding-top: 1.5em;
