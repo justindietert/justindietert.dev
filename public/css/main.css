@@ -11,8 +11,17 @@ body {
     margin: 0;
 }
 
-a {
+/* Links
+------------------------------------------------------- */
+a:link, a:visited {
     color: #06f;
+    outline: none;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: none;
+    color: #205f82; 
 }
 
 iframe {
@@ -20,44 +29,121 @@ iframe {
     overflow: hidden;
 }
 
-.container {
+ol, ul {
+    list-style: none; 
+}
+
+/* Page structure
+------------------------------------------------------- */
+#wrap {
     margin: 0 auto;
-    max-width: 90em; /* 1620px at 18px base font size (set in typelate.css) */
+    max-width: 62.5em; /* 1125px at 18px base font size */
     padding: 1em 0;
 }
-    .lt-ie9 .container { max-width: 39em; }
+    .lt-ie9 #wrap { max-width: 39em; }
 
-.footer {
-    padding-top: 1.5em;
+
+#logo {
+  float: left; 
+}
+    #logo a:hover {
+        opacity: .60; 
+    }
+
+div[role="main"] {
+    width: 70%;
+    margin: 0 auto;
 }
 
-.desc {
-    color: #888;
+div.inner {
+    padding-top: 2em;
 }
 
-.intro {
-    border-bottom: 1px dotted #aaa;
-    padding-bottom: 1.5em;
+a.menu {
+    display: none; 
+}
+    @media only screen and (max-width: 50em) {
+        a.menu {
+            display: block;
+            position: absolute;
+            top: .75em;
+            right: 1em; 
+            font-size: 1.5em;
+            color: #222;
+            opacity: .30;
+        } 
+            a.menu:hover, a.menu:active {
+                opacity: 1;
+            }
+    }
+
+nav[role="navigation"] {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 0.556em; 
+}
+    @media only screen and (max-width: 50em) {
+        nav[role="navigation"] {
+            display: none;
+            clear: left;
+            margin-bottom: 1.25em;
+            padding-top: 1.111em;
+            width: 100%; 
+        } 
+    }
+
+nav[role="navigation"] ul {
+    padding: 0 0 0.611em 0; 
+    margin-top: 0;
+    margin-bottom: 0.611em;
+}
+    @media only screen and (max-width: 50em) {
+        nav[role="navigation"] ul {
+                padding: 0;
+                text-align: left;
+                border-top: 1px solid rgba(0, 0, 0, 0.05);
+            } 
+        }
+
+nav[role="navigation"] ul li {
+    display: inline;
+    margin: 0 2.222em 0 0; 
+}
+    @media only screen and (max-width: 50em) {
+        nav[role="navigation"] ul li {
+                display: block;
+                margin: 0; 
+            } 
+        }
+
+nav[role="navigation"] ul li a {
+    font-weight: 600;
+    letter-spacing: 1px;
+    letter-spacing: 0.056rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3); 
+}
+    @media only screen and (max-width: 50em) {
+        nav[role="navigation"] ul li a {
+                display: block;
+                padding: 1.111em 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+            } 
+        }
+
+nav[role="navigation"] ul li a:hover {
+    color: #222; 
 }
 
-.social {
-    border-top: 1px dotted #aaa;
-    padding-top: 1.5em;
+nav[role="navigation"] ul li.active a {
+    color: #222; 
 }
 
-.last-item {
-    border-top: 1px dotted #aaa;
-    padding-top: 0.875em;
-}
-
-.footer {
-    border-top: 1px dotted #aaa;
-}
-
-.content {
-    border-bottom: 1px dotted #aaa;
-    margin-bottom: 1.5em;
-}
+/*header {
+    overflow: hidden;
+    background: lightblue;
+}*/
 
 
 /* ==========================================================================
@@ -68,13 +154,13 @@ iframe {
     /*p, ul {
         font-size: 0.875em;
     }*/
-    .feature:first-child,
+    /*.feature:first-child,
     .info:first-child {
         border-right: 1px dotted #aaa;
-    }
-    .container {
+    }*/
+    /*#wrap {
         padding: 1em;
-    }
+    }*/
     /*h1 {
         font-size: 2.6em;
     }
@@ -84,14 +170,14 @@ iframe {
 }
 
 @media only screen and (min-width: 54em) {
-    .content {
+    /*.content {
         border: none;
         border-right: 1px dotted #aaa;
         margin-bottom: 0;
     }
     .info:first-child {
         border: none;
-    }
+    }*/
     /*h1 {
         font-size: 3em;
     }
@@ -101,9 +187,9 @@ iframe {
 }
 
 @media only screen and (min-width: 76em) {
-    .info:first-child {
+    /*.info:first-child {
         border-right: 1px dotted #aaa;
-    }
+    }*/
     /*h1 {
         font-size: 3.2em;
     }
