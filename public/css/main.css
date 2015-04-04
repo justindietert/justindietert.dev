@@ -8,20 +8,28 @@
 
 body {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0;
+    font-weight: 400;
+    background: #f2f2f2;
 }
 
-/* Links
+strong {
+    font-weight: 600;
+}
+
+/* Body Text Links
 ------------------------------------------------------- */
-a:link, a:visited {
-    color: #06f;
+div.inner a:link, 
+div.inner a:visited {
+    color: #0074D9;
     outline: none;
     text-decoration: none; 
 }
 
-a:hover {
+div.inner a:hover,
+div.inner a:active {
     text-decoration: none;
-    color: #205f82; 
+    border-bottom: 0.056em dotted #0074D9;
+    padding-bottom: 0.111em;
 }
 
 iframe {
@@ -33,31 +41,62 @@ ol, ul {
     list-style: none; 
 }
 
+
+/* Text Selection Colors
+------------------------------------------------------- */
+::-moz-selection {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    background: #b2b2b2; 
+}
+
+::selection {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    background: #b2b2b2; 
+}
+
+
 /* Page structure
 ------------------------------------------------------- */
 #wrap {
-    margin: 0 auto;
-    max-width: 62.5em; /* 1125px at 18px base font size */
-    padding: 1em 0;
+    margin: 1em 0 0 0;
+    padding: 2.25em 0;
+    background: #fff;
+    overflow:hidden;
 }
     .lt-ie9 #wrap { max-width: 39em; }
-
 
 #logo {
   float: left; 
 }
-    #logo a:hover {
+    #logo a:hover, #logo a:active {
         opacity: .60; 
     }
 
-div[role="main"] {
-    width: 70%;
+header[role="banner"] {
     margin: 0 auto;
+    max-width: 55.556em; /* 1000px at 18px base font size */
+    z-index: 100;
+    position: relative;
+    overflow: hidden;
+}
+
+div[role="main"] {
+    margin: 0 auto;
+    max-width: 55.556em; /* 1000px at 18px base font size */
 }
 
 div.inner {
-    padding-top: 2em;
+    margin: 0 auto;
+    width: 68%;
+    padding-top: 2.5em;
 }
+    @media only screen and (max-width: 50em) {
+        div.inner {
+            width: 100%;
+        }
+    }
 
 a.menu {
     display: none; 
@@ -66,8 +105,8 @@ a.menu {
         a.menu {
             display: block;
             position: absolute;
-            top: .75em;
-            right: 1em; 
+            top: .0875em;
+            right: 0; 
             font-size: 1.5em;
             color: #222;
             opacity: .30;
@@ -78,9 +117,9 @@ a.menu {
     }
 
 nav[role="navigation"] {
-    width: 70%;
+    width: 68%;
     margin: 0 auto;
-    padding-top: 0.556em; 
+    padding-top: 0.555em; 
 }
     @media only screen and (max-width: 50em) {
         nav[role="navigation"] {
@@ -93,9 +132,9 @@ nav[role="navigation"] {
     }
 
 nav[role="navigation"] ul {
-    padding: 0 0 0.611em 0; 
+    padding: 0 0 0.6125em 0; 
     margin-top: 0;
-    margin-bottom: 0.611em;
+    margin-bottom: 0;
 }
     @media only screen and (max-width: 50em) {
         nav[role="navigation"] ul {
@@ -132,7 +171,8 @@ nav[role="navigation"] ul li a {
             } 
         }
 
-nav[role="navigation"] ul li a:hover {
+nav[role="navigation"] ul li a:hover,
+nav[role="navigation"] ul li a:active {
     color: #222; 
 }
 
@@ -140,11 +180,19 @@ nav[role="navigation"] ul li.active a {
     color: #222; 
 }
 
-/*header {
-    overflow: hidden;
-    background: lightblue;
-}*/
+footer {
+    margin: 0 auto;
+    max-width: 55.556em; /* 1000px at 18px base font size */
+}
 
+
+/* Typography Adjustments
+------------------------------------------------------- */
+
+h2.hero {
+    font-family: 'Source Serif Pro';
+    font-weight: 400;
+}
 
 /* ==========================================================================
    Media Queries for Styling (See grid.css for column breakpoints)
