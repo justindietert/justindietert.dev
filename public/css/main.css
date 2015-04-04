@@ -180,11 +180,11 @@ nav[role="navigation"] ul li.active a {
     color: #222; 
 }
 
-footer {
+div.foot {
     margin: 0 auto;
     max-width: 55.556em; /* 1000px at 18px base font size */
+    padding-bottom: 2.5em;
 }
-
 
 /* Typography Adjustments
 ------------------------------------------------------- */
