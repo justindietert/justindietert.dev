@@ -11,8 +11,7 @@ $('a.menu').click(
 
     } else {
         $('a.menu').html('<i class="fa fa-bars"></i>');
-
+        $('nav[role="navigation"]').removeAttr('style');
     }
-
-    return false;
+    
 });
