@@ -5,6 +5,9 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+    margin: 0;
+}
 
 body {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -16,20 +19,22 @@ strong {
     font-weight: 600;
 }
 
+
 /* Body Text Links
 ------------------------------------------------------- */
 div.inner a:link, 
 div.inner a:visited {
     color: #0074D9;
-    outline: none;
     text-decoration: none; 
 }
 
 div.inner a:hover,
-div.inner a:active {
+div.inner a:active,
+div.inner a:focus {
     text-decoration: none;
     border-bottom: 0.056em dotted #0074D9;
     padding-bottom: 0.111em;
+    outline: 0;
 }
 
 iframe {
@@ -63,29 +68,40 @@ ol, ul {
     margin: 1em 0 0 0;
     padding: 2.25em 0;
     background: #fff;
-    overflow:hidden;
+    overflow: hidden;
 }
-    .lt-ie9 #wrap { max-width: 39em; }
 
 #logo {
   float: left; 
 }
-    #logo a:hover, #logo a:active {
-        opacity: .60; 
-    }
 
-header[role="banner"] {
+#logo a:hover, 
+#logo a:active,
+#logo a:focus {
+    opacity: .60;
+    outline: 0; 
+}
+
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+header.banner {
     margin: 0 auto;
     max-width: 55.556em; /* 1000px at 18px base font size */
     z-index: 100;
     position: relative;
     overflow: hidden;
 }
+    .lt-ie9 header.banner { max-width: 39em; }
 
-div[role="main"] {
+div.main {
     margin: 0 auto;
     max-width: 55.556em; /* 1000px at 18px base font size */
 }
+    .lt-ie9 div.main { max-width: 39em; }
 
 div.inner {
     margin: 0 auto;
@@ -105,24 +121,33 @@ a.menu {
         a.menu {
             display: block;
             position: absolute;
-            top: .0875em;
+            top: 0.5em;
             right: 0; 
-            font-size: 1.5em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            letter-spacing: 0.056rem;
+            text-transform: uppercase;
+            text-decoration: none;
             color: #222;
             opacity: .30;
         } 
-            a.menu:hover, a.menu:active {
+            a.menu:hover, 
+            a.menu:active {
                 opacity: 1;
+                outline: 0;
             }
+                a.menu:focus {
+                    outline: 0;
+                }
     }
 
-nav[role="navigation"] {
+nav.navigation {
     width: 68%;
     margin: 0 auto;
     padding-top: 0.555em; 
 }
     @media only screen and (max-width: 50em) {
-        nav[role="navigation"] {
+        nav.navigation {
             display: none;
             clear: left;
             margin-bottom: 1.25em;
@@ -131,31 +156,31 @@ nav[role="navigation"] {
         } 
     }
 
-nav[role="navigation"] ul {
+nav.navigation ul {
     padding: 0 0 0.6125em 0; 
     margin-top: 0;
     margin-bottom: 0;
 }
     @media only screen and (max-width: 50em) {
-        nav[role="navigation"] ul {
+        nav.navigation ul {
                 padding: 0;
                 text-align: left;
                 border-top: 1px solid rgba(0, 0, 0, 0.05);
             } 
         }
 
-nav[role="navigation"] ul li {
+nav.navigation ul li {
     display: inline;
     margin: 0 2.222em 0 0; 
 }
     @media only screen and (max-width: 50em) {
-        nav[role="navigation"] ul li {
+        nav.navigation ul li {
                 display: block;
                 margin: 0; 
             } 
         }
 
-nav[role="navigation"] ul li a {
+nav.navigation ul li a {
     font-weight: 600;
     letter-spacing: 1px;
     letter-spacing: 0.056rem;
@@ -164,20 +189,27 @@ nav[role="navigation"] ul li a {
     color: rgba(0, 0, 0, 0.3); 
 }
     @media only screen and (max-width: 50em) {
-        nav[role="navigation"] ul li a {
+        nav.navigation ul li a {
                 display: block;
                 padding: 1em 0 1.111em 0;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
             } 
         }
 
-nav[role="navigation"] ul li a:hover,
-nav[role="navigation"] ul li a:active {
+nav.navigation ul li a:hover,
+nav.navigation ul li a:active,
+nav.navigation ul li a:focus {
+    color: #222; 
+    outline: 0;
+}
+
+nav.navigation ul li.active a {
     color: #222; 
 }
 
-nav[role="navigation"] ul li.active a {
-    color: #222; 
+footer {
+    color: #777;
+    font-weight: 300;
 }
 
 div.foot {
@@ -185,6 +217,8 @@ div.foot {
     max-width: 55.556em; /* 1000px at 18px base font size */
     padding-bottom: 2.5em;
 }
+    .lt-ie9 div.foot { max-width: 39em; }
+
 
 /* Typography Adjustments
 ------------------------------------------------------- */
@@ -193,56 +227,3 @@ h2.hero {
     font-family: 'Source Serif Pro';
     font-weight: 400;
 }
-
-/* ==========================================================================
-   Media Queries for Styling (See grid.css for column breakpoints)
-   ========================================================================== */
-
-@media only screen and (min-width: 34em) {
-    /*p, ul {
-        font-size: 0.875em;
-    }*/
-    /*.feature:first-child,
-    .info:first-child {
-        border-right: 1px dotted #aaa;
-    }*/
-    /*#wrap {
-        padding: 1em;
-    }*/
-    /*h1 {
-        font-size: 2.6em;
-    }
-    h2 {
-        font-size: 1.6em;
-    }*/
-}
-
-@media only screen and (min-width: 54em) {
-    /*.content {
-        border: none;
-        border-right: 1px dotted #aaa;
-        margin-bottom: 0;
-    }
-    .info:first-child {
-        border: none;
-    }*/
-    /*h1 {
-        font-size: 3em;
-    }
-    h2 {
-        font-size: 1.7em;
-    }*/
-}
-
-@media only screen and (min-width: 76em) {
-    /*.info:first-child {
-        border-right: 1px dotted #aaa;
-    }*/
-    /*h1 {
-        font-size: 3.2em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }*/
-}
-

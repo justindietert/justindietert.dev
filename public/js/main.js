@@ -4,14 +4,14 @@
 $('a.menu').click(
     function() {
 
-    $('nav[role="navigation"]').toggle();
+    $('nav.navigation').toggle();
 
-    if ($('a.menu').html() == '<i class="fa fa-bars"></i>') {
-        $('a.menu').html('<i class="fa fa-times"></i>');
+    if ($('a.menu').html() == 'Menu') {
+        $('a.menu').html('Close');
 
     } else {
-        $('a.menu').html('<i class="fa fa-bars"></i>');
-        $('nav[role="navigation"]').removeAttr('style');
+        $('a.menu').html('Menu');
+        $('nav.navigation').removeAttr('style');
     }
     
 });

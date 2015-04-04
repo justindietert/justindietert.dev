@@ -46,9 +46,14 @@ textarea {
 
 .browserupgrade {
     margin: 0 0 0.2em 0;
-    background: #ccc;
-    color: #222;
+    background: #222;
+    color: #f2f2f2;
     padding: 0.2em 0 0.4em 2.5em;
+}
+
+.browserupgrade a:link,
+.browserupgrade a:visited {
+    color: #9CC8F1;
 }
 
 @media print,
