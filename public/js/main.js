@@ -4,14 +4,15 @@
 $('a.menu').click(
     function() {
 
-    $('nav.navigation').toggle();
+    $('nav.navigation').slideToggle('fast', function(){
+        if ($('a.menu').html() == 'Menu') {
+            $('a.menu').html('Close');
 
-    if ($('a.menu').html() == 'Menu') {
-        $('a.menu').html('Close');
+        } else {
+            $('a.menu').html('Menu');
+            $('nav.navigation').removeAttr('style');
+        }        
+        
+    });
 
-    } else {
-        $('a.menu').html('Menu');
-        $('nav.navigation').removeAttr('style');
-    }
-    
 });
