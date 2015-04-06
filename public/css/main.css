@@ -128,12 +128,12 @@ a.menu {
             letter-spacing: 0.056rem;
             text-transform: uppercase;
             text-decoration: none;
-            color: #222;
-            opacity: .30;
+            color: #bbb;
+            color: rgba(0, 0, 0, 0.3); 
         } 
             a.menu:hover, 
             a.menu:active {
-                opacity: 1;
+                color: #222; 
                 outline: 0;
             }
                 a.menu:focus {
@@ -186,6 +186,7 @@ nav.navigation ul li a {
     letter-spacing: 0.056rem;
     text-transform: uppercase;
     text-decoration: none;
+    color: #bbb;
     color: rgba(0, 0, 0, 0.3); 
 }
     @media only screen and (max-width: 50em) {
