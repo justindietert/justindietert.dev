@@ -126,6 +126,7 @@ div.inner {
     margin: 0 auto;
     width: 68%;
     padding-top: 2.5em;
+    transition: width 200ms ease-in-out;
 }
     @media only screen and (max-width: 50em) {
         div.inner {
@@ -181,11 +182,11 @@ nav.navigation ul {
 }
     @media only screen and (max-width: 50em) {
         nav.navigation ul {
-                padding: 0;
-                text-align: left;
-                border-top: 0.056em dotted #dfdfdf;
-            } 
-        }
+            padding: 0;
+            text-align: left;
+            border-top: 0.056em dotted #dfdfdf;
+        } 
+    }
 
 nav.navigation ul li {
     display: inline;
@@ -193,10 +194,10 @@ nav.navigation ul li {
 }
     @media only screen and (max-width: 50em) {
         nav.navigation ul li {
-                display: block;
-                margin: 0; 
-            } 
-        }
+            display: block;
+            margin: 0; 
+        } 
+    }
 
 nav.navigation ul li a {
     font-weight: 600;
