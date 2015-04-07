@@ -5,8 +5,10 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html {
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 body {
@@ -66,9 +68,16 @@ ol, ul {
 ------------------------------------------------------- */
 #wrap {
     margin: 1em 0 0 0;
-    padding: 2.25em 0;
+    padding: 2.25em 0 0 0;
     background: #fff;
     overflow: hidden;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 8.333em; /* Height of footer element */
+}
+
+section#main {
+    padding-bottom: 1.5em;
 }
 
 #logo {
@@ -210,12 +219,16 @@ nav.navigation ul li.active a {
 footer {
     color: #777;
     font-weight: 300;
+    height: 8.333em; /* Set to be the same as padding-bottom on #wrap */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #f2f2f2;
 }
 
 div.foot {
     margin: 0 auto;
     max-width: 55.556em; /* 1000px at 18px base font size */
-    padding-bottom: 2.5em;
 }
     .lt-ie9 div.foot { max-width: 39em; }
 
