@@ -5,6 +5,29 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* Viewport Rules
+------------------------------------------------------- */
+@-ms-viewport{
+    width: device-width;
+}
+
+@-moz-viewport{
+    width: device-width;
+}
+
+@-o-viewport{
+    width: device-width;
+}
+
+@-webkit-viewport{
+    width: device-width;
+}
+
+@viewport{
+    width: device-width;
+}
+
 html, body {
     margin: 0;
     padding: 0;
