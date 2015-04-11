@@ -646,6 +646,10 @@ div.inner {
         }
     }
 
+/*----------------------------------*\
+    Footer
+\*----------------------------------*/
+
 footer {
     height: 8.333em; /* Set to be the same as padding-bottom on section#main */
     position: absolute;
@@ -659,6 +663,16 @@ div.foot {
     max-width: 55.556em; /* 1000px at 18px base font size */
 }
     .lt-ie9 div.foot { max-width: 39em; }
+
+ul.social {
+    padding: 0;
+    margin: 0;
+}
+
+ul.social li{
+    display: inline;
+    margin: 0 2.222em 0 0; 
+}
 
 
 /*---------------------------------------------------------*\
