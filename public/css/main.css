@@ -36,9 +36,9 @@ html {
 
 hr {
     display: block;
-    height: 1px;
+    height: 0.056em; /* 1px */
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 0.056em solid #e2e2e2;
     margin: 1em 0;
     padding: 0;
 }
@@ -69,7 +69,7 @@ textarea {
     padding: 0.2em 0 0.4em 2.5em;
 }
 
-.browserupgrade a:link,
+.browserupgrade a,
 .browserupgrade a:visited {
     color: #9CC8F1;
 }
@@ -483,6 +483,11 @@ ol, ul {
     list-style: none; 
 }
 
+img {
+    max-width: 100%; /* Makes sure images respect the bounds of a fluid container. The image never exceeds the width of its container. */
+    height: auto;    /* The image's aspect ratio is preserved even if it has an inline height set. */
+}                    
+
 #wrap {
     background: #fff;
     overflow: hidden;
@@ -504,9 +509,14 @@ hr#topbar {
 
 section#main {
     padding-top: 3.25em;
-    padding-bottom: 8.333em; /* Height of footer element */
+    padding-bottom: 11em; /* Height of footer element */
     background: #fff;
 }
+    @media only screen and (max-width: 28.125em) {
+        section#main {
+                padding-bottom: 17.325em; /* Height of footer element */
+            } 
+        }
 
 #logo {
     float: left; 
@@ -584,13 +594,17 @@ nav.navigation ul {
         nav.navigation ul {
             padding: 0;
             text-align: left;
-            border-top: 0.056em dotted #dfdfdf;
+            border-top: 0.056em solid #f2f2f2;
         } 
     }
 
 nav.navigation ul li {
     display: inline;
     margin: 0 2.222em 0 0; 
+}
+
+nav.navigation ul li:last-child {
+    margin-right: 0;
 }
     @media only screen and (max-width: 50em) {
         nav.navigation ul li {
@@ -612,7 +626,7 @@ nav.navigation ul li a {
         nav.navigation ul li a {
                 display: block;
                 padding: 1em 0 1.111em 0;
-                border-bottom: 0.056em dotted #dfdfdf;
+                border-bottom: 0.056em solid #f2f2f2;
             } 
         }
 
@@ -647,16 +661,42 @@ div.inner {
     }
 
 /*----------------------------------*\
+    Main Body Text Links
+\*----------------------------------*/
+
+div.inner a, 
+div.inner a:visited {
+    color: #0074D9;
+    text-decoration: none; 
+}
+
+div.inner a:hover,
+div.inner a:active,
+div.inner a:focus {
+    text-decoration: none;
+    border-bottom: 0.056em dotted #0074D9;
+    padding-bottom: 0.111em;
+    outline: 0;
+}
+
+/*----------------------------------*\
     Footer
 \*----------------------------------*/
 
 footer {
-    height: 8.333em; /* Set to be the same as padding-bottom on section#main */
+    height: 11em; /* Set to be the same as padding-bottom on section#main */
     position: absolute;
     bottom: 0;
     left: 0;
     background: #f2f2f2;
+    color: #aaa;
+    font-weight: 300;
 }
+    @media only screen and (max-width: 28.125em) {
+        footer {
+                height: 17.325em; /* Set to be the same as padding-bottom on section#main */
+            } 
+        }
 
 div.foot {
     margin: 0 auto;
@@ -669,11 +709,36 @@ ul.social {
     margin: 0;
 }
 
-ul.social li{
+ul.social li {
     display: inline;
     margin: 0 2.222em 0 0; 
 }
+    @media only screen and (max-width: 28.125em) {
+        ul.social li {
+                display: block;
+                margin: 0 0 0.5em 0;
+            } 
+        }
 
+ul.social li:last-child {
+    margin-right: 0;
+}
+
+div.inner ul.social li a,
+div.inner ul.social li a:visited {
+    text-decoration: none;
+    font-weight: 400;
+    color: #aaa;
+}
+
+div.inner ul.social li a:hover,
+div.inner ul.social li a:active,
+div.inner ul.social li a:focus {
+    text-decoration: none;
+    border-bottom: 0.056em dotted #aaa;
+    padding-bottom: 0.111em;
+    outline: 0;
+}
 
 /*---------------------------------------------------------*\
 
@@ -698,30 +763,6 @@ h6 {
 
 strong {
     font-weight: 600;
-}
-
-footer {
-    color: #777;
-    font-weight: 300;
-}
-
-/*----------------------------------*\
-    Main Body Text Links
-\*----------------------------------*/
-
-div.inner a:link, 
-div.inner a:visited {
-    color: #0074D9;
-    text-decoration: none; 
-}
-
-div.inner a:hover,
-div.inner a:active,
-div.inner a:focus {
-    text-decoration: none;
-    border-bottom: 0.056em dotted #0074D9;
-    padding-bottom: 0.111em;
-    outline: 0;
 }
 
 /*----------------------------------*\
@@ -791,6 +832,9 @@ div.inner a:focus {
     *zoom: 1;
 }
 
+.centertext {
+    text-align: center;
+}
 
 /*---------------------------------------------------------*\
 
