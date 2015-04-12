@@ -583,6 +583,9 @@ nav.navigation {
             padding-top: 1.111em;
             width: 100%; 
         } 
+        .no-js nav.navigation {
+            display: block; /* If JavaScript is disabled, display menu in open state */
+        } 
     }
 
 nav.navigation ul {
