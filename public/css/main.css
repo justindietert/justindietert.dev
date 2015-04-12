@@ -542,7 +542,6 @@ header.banner {
     position: relative;
     overflow: hidden;
 }
-    .lt-ie9 header.banner { max-width: 39em; }
 
 a.menu {
     display: none; 
@@ -649,7 +648,6 @@ div.main {
     max-width: 55.556em; /* 1000px at 18px base font size */
     padding-bottom: 1.5em;
 }
-    .lt-ie9 div.main { max-width: 39em; }
 
 div.inner {
     margin: 0 auto;
@@ -705,7 +703,6 @@ div.foot {
     margin: 0 auto;
     max-width: 55.556em; /* 1000px at 18px base font size */
 }
-    .lt-ie9 div.foot { max-width: 39em; }
 
 ul.social {
     padding: 0;
