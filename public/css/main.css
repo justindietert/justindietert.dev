@@ -540,6 +540,7 @@ header.banner {
     max-width: 55.556em; /* 1000px at 18px base font size */
     z-index: 100;
     position: relative;
+    width: 100%;
     overflow: hidden;
 }
 
