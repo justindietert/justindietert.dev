@@ -576,7 +576,7 @@ a.menu {
     }
 
 nav.navigation {
-    width: 70%; /* Was 68 % */
+    width: 68%;
     margin: 0 auto;
     padding-top: 0.555em; 
 }
@@ -656,7 +656,7 @@ div.main {
 
 div.inner {
     margin: 0 auto;
-    width: 70%; /* Was 68 % */
+    width: 68%;
     padding-top: 2.5em;
     transition: width 200ms ease-in-out;
 }
