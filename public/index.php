@@ -54,16 +54,16 @@
         
             <div role="main" class="main">
                 <div class="inner">
-                    <div class="row">
-                        <div class="col left">
-                            <h2>Clean design</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et numquam eos repellat, ipsum exercitationem consequatur <a href="#">temporibus</a>. Eos dolore facilis praesentium nisi culpa pariatur impedit ipsa nostrum nulla quasi, totam tempore suscipit iste vitae, expedita deleniti harum placeat ab sapiente, tenetur sed ducimus quod. Et impedit quaerat debitis esse eos ullam soluta numquam sit? Possimus amet aspernatur, suscipit impedit reiciendis. Officiis optio aut, mollitia dolores, pariatur dolorum <strong>vel aperiam quis</strong> explicabo! Dolores rerum consequatur, aut nam odit animi soluta expedita ut recusandae dolorum a, voluptatibus dignissimos repellendus. Fugit laborum facere eum amet soluta fuga vero, culpa asperiores atque libero ut dolorem?</p>
-                        </div>
 
-                        <div class="col left">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et numquam eos repellat, ipsum exercitationem consequatur temporibus. Eos dolore facilis praesentium nisi culpa pariatur impedit ipsa nostrum nulla quasi, totam tempore suscipit iste vitae, expedita deleniti harum placeat ab sapiente, tenetur sed ducimus quod. <em>Et impedit quaerat debitis</em> esse eos ullam soluta numquam sit? Possimus amet aspernatur, suscipit impedit reiciendis. Officiis optio aut, mollitia dolores, pariatur dolorum vel aperiam quis explicabo! Dolores rerum consequatur, aut nam odit animi soluta expedita ut recusandae dolorum a, voluptatibus dignissimos repellendus. Fugit laborum facere eum amet soluta fuga vero, culpa asperiores atque libero ut dolorem?</p>
-                        </div>
-                    </div>
+                    <h1>Clean design</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur nesciunt illum, sequi ex vel quas consequuntur sed eius inventore sapiente quibusdam earum enim? Alias!</p>
+                    <h2>Clean design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod porro perspiciatis nesciunt repudiandae error, provident, facere quasi fugit nisi quis hic facilis pariatur aliquam inventore.</p>
+                    <h3>Clean design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque beatae pariatur laudantium incidunt fugit facilis, eligendi, delectus voluptate omnis veritatis reprehenderit. Ducimus, cupiditate. Reiciendis, voluptas!</p>
+                    <h4>Clean design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quis nostrum quo optio, officia ex cum sint est ipsam. Possimus inventore ab minus voluptas fugit!</p>
+         
                 </div>
             </div>
 
